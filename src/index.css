@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* @import  './fonts/AirbnbCerealLight.ttf'; */
+
+*{
+    margin: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.boxImg{
+    width: 100%;
+    height: 300px;
 }
+
+.boxText{
+    width: 100%;
+    height: 20%;
+}
+
+.containerNav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    align-content: center;
+    & ul{
+
+        & il {
+            padding: 1%;
+    
+            & a {
+                text-decoration: solid;
+                font-size: 1.2rem;
+                color:white;
+                pointer-events: auto;
+                text-transform: uppercase;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+                &:hover {
+                    text-shadow: #ff6262 1px 0px 10px;
+                }
+            }
+        }
+    
+    }
+    
+}
+
+
+.imgTestimony{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
