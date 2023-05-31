@@ -2,24 +2,17 @@ import React,{ useEffect, useState } from "react";
 
 
 export function Navbar(){
-    const [snows, setSnows] = useState([]);
 
     useEffect(() => {
-        const clonedSnows = [];
-        for (let i = 0; i < 7; i++) {
-            const valueLeft = 5 + i * 15;
-            const valueMrg = getRandomMargin();
-            const snowStyle = { left: `${valueLeft}%`, marginBottom: `${valueMrg}%`  };
-          clonedSnows.push(<div className='snow' style={snowStyle} key={i}></div>);
-        }
-        setSnows(clonedSnows);
-    }, []);
-
-    const getRandomMargin = () => {
-        const minMargin = 1;
-        const maxMargin = 7;
-        return Math.floor(Math.random() * (maxMargin - minMargin + 1) + minMargin);
-    };
+        const script = document.createElement("script");
+        script.src = "https://app.embed.im/snow.js";
+        script.defer = true;
+        document.getElementById("BackGroundNav").appendChild(script);
+    
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
     
     return (
         <div className="container">
@@ -33,13 +26,8 @@ export function Navbar(){
                         <il ><a href="/">Contactos</a></il>
                     </ul>
                 </div>
-                <img className='imgTestimony' src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>
-                <div id="containerSnows"  className="snows">
-                    {/* <div id="snow" className="snow"></div> */}
-                    {snows}
-                </div>
+                <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>
             </div> 
-
         </div>
  
     );
