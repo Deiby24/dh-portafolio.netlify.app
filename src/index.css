@@ -1,4 +1,4 @@
-/* @import  './fonts/AirbnbCerealLight.ttf'; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
 
 *{
     margin: 0%;
@@ -53,4 +53,38 @@
     height: 100%;
     object-fit: cover;
     background-attachment: fixed;
+}
+
+/* Section About Me */
+
+.subContainerAbout{
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 300px;
+    text-align-last: center;
+    background-color: white;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif ;
+    @media screen and (max-width: 900px) {
+        grid-auto-flow: row;    
+
+    }
+}
+
+.BackgrounAbout{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.imgAboutMe{
+    width: 40%;
+    height: 95%;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
 }
