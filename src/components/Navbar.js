@@ -7,12 +7,12 @@ export function Navbar(){
         const script = document.createElement("script");
         script.src = "https://app.embed.im/snow.js";
         script.defer = true;
-        document.getElementById("BackGroundNav").appendChild(script);
-    
+        const snows =document.getElementsByClassName("containerNav")[0];
+        snows.appendChild(script);
         return () => {
-          document.body.removeChild(script);
+          snows.removeChild(script);
         };
-      }, []);
+    }, []);
     
     return (
         <div className="container">
