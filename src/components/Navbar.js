@@ -15,9 +15,8 @@ export function Navbar(){
     }, []);
     
     return (
-        <div className="container">
-            <div className="boxImg">
-                <div className="containerNav">
+        <div className="containerNavbar">
+            <div className="containerNav">
                     <ul  className="NavbarMenu">
                         <il ><a href="/">Home</a></il>
                         <il ><a href="/">About-me</a></il>
@@ -25,9 +24,8 @@ export function Navbar(){
                         <il ><a href="/">Empresas</a></il>
                         <il ><a href="/">Contactos</a></il>
                     </ul>
-                </div>
+            </div>
                 <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>
-            </div> 
         </div>
  
     );
