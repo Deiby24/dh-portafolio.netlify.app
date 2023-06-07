@@ -5,6 +5,8 @@ import data from '../components/data';
 const images = require.context('../../src/img', true)
 export function Proyects() {
     return(
+        <div  className="w-full" style={{height:"600px"}}>
+            <h2>Proyectos</h2>
             <div className="containerProyect absolute"> 
                 {data.map(item=> (
                 <div className="bg-slate-50 text-slate-950 cardContainer max-w-xs rounded-2xl overflow-hidden">
@@ -17,5 +19,6 @@ export function Proyects() {
                 </div>
                 ))}
             </div>
+        </div>
     )
 }

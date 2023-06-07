@@ -94,6 +94,7 @@ body{
     height: 80%;
     padding: 5%;
     border-radius: 0.625rem;
+    background-size: cover;
 }
 
 .textAbout{
@@ -122,9 +123,30 @@ body{
 .containerProyect{
     width: 100%;
     height: 500px;
-    margin-top: 38%;
     display: grid;
     grid-auto-flow: column;
     place-items: center;
     z-index: 1;
+}
+
+/* section Empresa */
+
+.containerCompanies{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerCardCompanies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+}
+
+.titleCompanies{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif ;
 }
