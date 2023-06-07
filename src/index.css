@@ -58,18 +58,25 @@ body{
 
 
 .containerAbout{
-    height: 420px;
+    height: 500px;
     position: absolute;
     z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+.titleAbout{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif ;
 }
 
 .subContainerAbout{
-    height: 100%;
+    height: 90%;
     display: grid;
     grid-template-columns: 50% 50%;
     place-items: center;
     text-align-last: center;
-    background-color: white;
     font-family: 'Oswald', sans-serif ;
     @media screen and (max-width: 900px) {
         grid:none;    
@@ -81,9 +88,30 @@ body{
     justify-content: center;
 }
 
+.AboutMe{
+    background-image: url(../src/img/backgroundText.png);
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    border-radius: 0.625rem;
+}
+
+.textAbout{
+    color: grey;
+    font-weight: 100;
+    font-weight: 1.5;
+}
+
+#aboutName{
+    color: grey;
+    font-weight: 100;
+    font-weight: 1.5;
+    padding-bottom: 1%;
+}
+
 .imgAboutMe{
     width: 40%;
-    height: 95%;
+    height: 100%;
     border: 2px solid black;
     border-radius: 50%;
     object-fit: cover;
@@ -93,8 +121,10 @@ body{
 
 .containerProyect{
     width: 100%;
-    margin-top: 52%;
+    height: 500px;
+    margin-top: 38%;
     display: grid;
+    grid-auto-flow: column;
     place-items: center;
     z-index: 1;
 }
