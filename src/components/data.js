@@ -23,6 +23,7 @@ export  const data = [
         button: "Proximamente",
         enabled:false,
     },
+    
 ];
 
 export default data;

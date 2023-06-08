@@ -20,7 +20,7 @@ export function AboutMe() {
 
 
     return(
-        <div className="w-full" style={{height:"500px"}}> 
+        <div className="w-full" style={{height:"600px"}}> 
             <div className="containerAbout">
                 <div className="titleAbout">
                     <p>Sobre Mi</p>
