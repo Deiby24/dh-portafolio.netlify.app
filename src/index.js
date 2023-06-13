@@ -1,5 +1,6 @@
 import React from "react";
-import './index.css'
+import '../src/assets/main.css';
+import '../src/assets/tailwind.css';
 import  ReactDOM  from "react-dom/client";
 import { Navbar } from "./components/Navbar";
 import { AboutMe } from "./components/AboutMe";

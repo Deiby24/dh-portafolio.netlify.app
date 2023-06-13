@@ -1,5 +1,5 @@
 import React from "react";
-import '.././index.css';
+
 import data from '../components/data';
 
 const images = require.context('../../src/img', true)
