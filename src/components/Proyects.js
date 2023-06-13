@@ -14,7 +14,10 @@ export function Proyects() {
                     <div className="px-6 py-6">
                         <h2 className="text-xl mb-2">{item.name}</h2>
                         <p className="text-sm">{item.description}</p>
-                        <button className="bg-indigo-500 py-2 px-3 rounded-lg mt-4 ml-auto block">{item.enabled ? `${item.button}`: item.button}</button>
+                        {
+                            item.enabled ? <button className="bg-zinc-900 text-white py-2 px-3 rounded-lg mt-4 ml-auto block">{item.button}</button> 
+                            :<div className="bg-zinc-900 text-white text-center	 py-2 px-3 rounded-lg mt-4 ml-auto block">{item.button}</div>
+                        }   
                     </div>
                 </div>
                 ))}
