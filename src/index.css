@@ -150,3 +150,17 @@ body{
     font-weight: bold;
     font-family: 'Oswald', sans-serif ;
 }
+
+/*Expertise*/
+
+.containerExpertise{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerCardExpertise{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
+}

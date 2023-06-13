@@ -20,9 +20,9 @@ export function Navbar(){
                     <ul  className="NavbarMenu">
                         <il ><a href="/">Home</a></il>
                         <il ><a href="/">About-me</a></il>
-                        <il ><a href="/">Proyectos</a></il>
-                        <il ><a href="/">Empresas</a></il>
-                        <il ><a href="/">Contactos</a></il>
+                        <il ><a href="/">Proyects</a></il>
+                        <il ><a href="/">Collaborations</a></il>
+                        <il ><a href="/">Contact</a></il>
                     </ul>
             </div>
                 <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>

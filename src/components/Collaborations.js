@@ -14,17 +14,17 @@ export const collaborations = [
         name:"Corxy",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
         etiq:"Desarrollo de software",
-        etiq2:"Paginas Web",
-        etiq3:"Equipo",
+        etiq2:"Web",
+        etiq3:"Team",
     },
     {
         id:3,
         image:"./Hanabi.png",
-        name:"Hannabi",
+        name:"Hanabi",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-        etiq:"",
-        etiq2:"",
-        etiq3:"",
+        etiq:"Productos",
+        etiq2:"Tienda",
+        etiq3:"Web",
     },
 ];
 
