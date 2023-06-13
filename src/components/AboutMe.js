@@ -28,7 +28,7 @@ export function AboutMe() {
                 <div className="subContainerAbout">
                     <div className="containerImgAbout">
                         <div className="rounded-circle BackgrounAbout">
-                            <img className="imgAboutMe" src={require('../img/AboutMe.jpg')}></img>
+                            <img alt="aboutimg" className="imgAboutMe" src={require('../img/AboutMe.jpg')}></img>
                         </div>
                     </div>
                     <div className="AboutMe">
