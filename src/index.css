@@ -1,13 +1,166 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-image: url(../src/img/NavbarFondo.jpg);
+}
+
+#embedim--snow{
+    z-index: 0!important;
+}
+
+.containerNav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    & ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & il {
+            margin-left: 1%;
+            & a {
+                text-decoration: solid;
+                font-size: 100%;
+                color:white;
+                pointer-events: auto;
+                text-transform: uppercase;
+                font-family: 'Oswald', sans-serif ;
+    
+                &:hover {
+                    text-shadow: #ff6262 1px 0px 10px;
+                }
+            }
+        }
+    
+    }
+    
+}
+
+
+#BackGroundNav{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+/* Section About Me */
+
+
+.containerAbout{
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+.titleAbout{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif ;
+}
+
+.subContainerAbout{
+    height: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+    text-align-last: center;
+    font-family: 'Oswald', sans-serif ;
+    @media screen and (max-width: 900px) {
+        grid:none;    
+    }
+}
+
+.BackgrounAbout{
+    display: flex;
+    justify-content: center;
+}
+
+.AboutMe{
+    background-image: url(../src/img/backgroundText.png);
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    border-radius: 0.625rem;
+    background-size: cover;
+}
+
+.textAbout{
+    color: grey;
+    font-weight: 100;
+    font-weight: 1.5;
+}
+
+#aboutName{
+    color: grey;
+    font-weight: 100;
+    font-weight: 1.5;
+    padding-bottom: 1%;
+}
+
+.imgAboutMe{
+    width: 40%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* section proyects */
+
+.containerProyect{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    z-index: 1;
+}
+
+/* section Empresa */
+
+.containerCompanies{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerCardCompanies{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+}
+
+.titleCompanies{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif ;
+}
+
+/*Expertise*/
+
+.containerExpertise{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.containerCardExpertise{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5%;
 }
