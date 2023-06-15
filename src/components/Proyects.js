@@ -16,7 +16,7 @@ export function Proyects() {
                         <p className="text-sm">{item.description}</p>
                         {
                             item.enabled ? <button className="bg-zinc-900 text-white py-2 px-3 rounded-lg mt-4 ml-auto block">{item.button}</button> 
-                            :<div className="bg-zinc-900 text-white text-center	 py-2 px-3 rounded-lg mt-4 ml-auto block">{item.button}</div>
+                            :<div className="bg-zinc-900 text-white text-center	 py-2 px-3 rounded-lg mt-4 ml-auto block">Proximamente</div>
                         }   
                     </div>
                 </div>
