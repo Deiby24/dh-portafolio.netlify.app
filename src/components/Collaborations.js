@@ -1,31 +1,37 @@
-export const collaborations = [
-    {
-        id:1,
-        image:"./+Actitud.png",
-        name:"Mas Actitud",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-        etiq:"Temporal",
-        etiq2:"Empresa",
-        etiq3:"Desarrollo",
-    },
-    {
-        id:2,
-        image:"./Corxy.png",
-        name:"Corxy",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-        etiq:"Desarrollo de software",
-        etiq2:"Web",
-        etiq3:"Team",
-    },
-    {
-        id:3,
-        image:"./Hanabi.png",
-        name:"Hanabi",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.",
-        etiq:"Productos",
-        etiq2:"Tienda",
-        etiq3:"Web",
-    },
-];
+import React from "react";
+import collaborations from "./Data/CollaborationsData";
 
-export default collaborations;
+const images = require.context('../../src/img', true)
+export function Empresas({items}) {
+    return(
+        <div className="w-full" style={{height:`${collaborations.length * 200}px`}}>
+            <div id="Collaborationsbj" className="containerCompanies">
+                <div className="titleCompanies">
+                    <h1>COLLABORATIONS</h1>
+                </div>
+                <div className="containerCardCompanies">
+                    {collaborations.map(items=>(
+                        <div>
+                            <div class="max-w-sm rounded overflow-hidden ">
+                                <div style={{height:"200px"}}>
+                                    <img className="w-full h-full object-contain" src={images(items.image)} alt="Sunset in the mountains"/>
+                                </div>
+                                <div className="px-6 py-4">
+                                    <div className="font-bold text-xl mb-2">{items.name}</div>
+                                    <p className="text-gray-700 text-base">
+                                        {items.description}
+                                    </p>
+                                </div>
+                                <div className="px-6 pt-4 pb-2">
+                                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{items.etiq}</span>
+                                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{items.etiq2}</span>
+                                    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{items.etiq3}</span>
+                                </div>
+                            </div>
+                        </div>
+                    ))}   
+                </div>
+            </div>
+        </div>
+    )
+}

@@ -7,7 +7,7 @@ export function AboutMe() {
     
     useEffect(() => {
         const typed = new Typed(AnimationAbout.current,{
-            strings: ['> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est ratione neque facere, vitae quam totam deleniti corrupti ad aliquid magnam voluptatem! Maxime voluptatum quae reprehenderit quas necessitatibus iure in!Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est ratione neque facere, vitae quam totam deleniti corrupti ad aliquid magnam voluptatem! Maxime voluptatum quae reprehenderit quas necessitatibus iure in!Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est ratione neque facere, vitae quam totam deleniti corrupti ad aliquid magnam voluptatem! Maxime voluptatum quae reprehenderit quas necessitatibus iure in.'],
+            strings: ['> Tengo 18 años , vivo en Antioquia/Medellín , Tengo muchos conocimiento en muchos lenguajes de programación pero me gustaría aprender mas ya que tengo un gran interés por aprender cosas nuevas y llenarme de conocimientos , soy una persona de retos lo cual si me plantean algo difícil me intereso por eso hasta terminarlo. Mis características , habilidades y cualidades son que si no se algo trato de prenderlo por mi mismo , el trabajo en equipo es lo que mas me gusta , ayudar a los demás o compartirles mi conocimiento ,el respeto ante todo, soy consciente los tiempos tanto el mio como el de los demás , por lo tanto me considero una persona motivada a hacer las cosas, que cada dia se levanta pensando en el presente tanto como el futuro y que quiere aprender mas.'],
             typeSpeed: 40,
         })
 
@@ -20,10 +20,10 @@ export function AboutMe() {
 
 
     return(
-        <div className="w-full" style={{height:"600px"}}> 
-            <div className="containerAbout">
-                <div className="titleAbout">
-                    <p>About Me</p>
+        <div  className="w-full" style={{height:"600px"}}> 
+            <div className="containerAbout" >
+                <div id="About" className="titleAbout">
+                    <h2>ABOUT ME</h2>
                 </div>
                 <div className="subContainerAbout">
                     <div className="containerImgAbout">

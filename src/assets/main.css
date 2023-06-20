@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap');
 
-
 *{
     margin: 0%;
 }
@@ -9,16 +8,22 @@ body{
     background-image: url(../img/NavbarFondo.jpg);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #embedim--snow{
     z-index: 0!important;
 }
 
 .containerNav{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 10%;
     background-color: rgba(0, 0, 0, 0.50);
+    border-bottom: solid 1px white;
     text-align: center;
+    z-index: 3;
     & ul{
         height: 100%;
         display: flex;
@@ -33,7 +38,7 @@ body{
                 pointer-events: auto;
                 text-transform: uppercase;
                 font-family: 'Oswald', sans-serif ;
-    
+                cursor: pointer;
                 &:hover {
                     text-shadow: #ff6262 1px 0px 10px;
                 }
@@ -67,6 +72,7 @@ body{
     text-align: center;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif ;
+    text-shadow: 5px 5px 5px #dddddd;
 }
 
 .subContainerAbout{
@@ -122,9 +128,17 @@ body{
     width: 100%;
     height: 500px;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     z-index: 1;
+}
+
+.titleProyects{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #0a0a0a;
+    font-family: 'Oswald', sans-serif ;
 }
 
 /* section Empresa */
@@ -151,9 +165,16 @@ body{
 
 /*Expertise*/
 
+.titleSkills{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #0a0a0a;
+    font-family: 'Oswald', sans-serif ;
+}
+
 .containerExpertise{
     width: 100%;
-    position: absolute;
     z-index: 1;
 }
 
@@ -162,3 +183,33 @@ body{
     grid-template-columns: 1fr 1fr;
     padding: 5%;
 }
+
+/*  Footer */
+
+.containerFooter{
+    width: 100%;
+    height: 100%;
+    border-top: solid 1px white;
+    background-color: rgba(0, 0, 0, 0.738);
+}
+
+.subContainerFooter{
+    height: 100%;
+}
+
+.contact{    
+    height: 85%;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    align-content: center;
+    justify-content: center;
+	grid-auto-columns: 100px;
+	grid-auto-rows: 60%;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+}
+

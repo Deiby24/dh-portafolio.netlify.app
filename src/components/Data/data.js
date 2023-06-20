@@ -4,7 +4,7 @@ export  const data = [
         name: "Tienda Python",
         description: "",
         image: "./testimonio-1.jpg",
-        button: "Proximamente",
+        button: "Ir",
         enabled:false,
     },
     {
@@ -12,7 +12,7 @@ export  const data = [
         name: "Calculadora en c#",
         description: "",
         image: "./testimonio-2.jpg",
-        button: "Proximamente",
+        button: "Ir",
         enabled:false,
     },
     {
@@ -20,7 +20,7 @@ export  const data = [
         name: "Js",
         description: "",
         image: "./testimonio-1.jpg",
-        button: "Proximamente",
+        button: "Ir",
         enabled:false,
     },
     
