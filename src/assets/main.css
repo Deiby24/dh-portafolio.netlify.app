@@ -8,6 +8,10 @@ body{
     background-image: url(../img/NavbarFondo.jpg);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #embedim--snow{
     z-index: 0!important;
 }
@@ -34,7 +38,7 @@ body{
                 pointer-events: auto;
                 text-transform: uppercase;
                 font-family: 'Oswald', sans-serif ;
-    
+                cursor: pointer;
                 &:hover {
                     text-shadow: #ff6262 1px 0px 10px;
                 }
@@ -62,13 +66,13 @@ body{
     z-index: 1;
     width: 100%;
     background-color: white;
-    border-bottom: solid 5px black;
 }
 
 .titleAbout{
     text-align: center;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif ;
+    text-shadow: 5px 5px 5px #dddddd;
 }
 
 .subContainerAbout{
@@ -129,6 +133,14 @@ body{
     z-index: 1;
 }
 
+.titleProyects{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #0a0a0a;
+    font-family: 'Oswald', sans-serif ;
+}
+
 /* section Empresa */
 
 .containerCompanies{
@@ -153,9 +165,16 @@ body{
 
 /*Expertise*/
 
+.titleSkills{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px #0a0a0a;
+    font-family: 'Oswald', sans-serif ;
+}
+
 .containerExpertise{
     width: 100%;
-    position: absolute;
     z-index: 1;
 }
 
@@ -193,3 +212,4 @@ body{
     color: white;
     text-align: center;
 }
+

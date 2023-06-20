@@ -1,15 +1,15 @@
 import React from "react";
 
-import data from '../components/data';
+import data from './Data/data';
 
 const images = require.context('../../src/img', true)
 export function Proyects() {
     return(
-        <div  className="w-full" style={{height:"600px"}}>
-            <h2>Proyectos</h2>
-            <div className="containerProyect absolute"> 
+        <div  className="w-full" style={{height:`${data.length * 200}px`}}>
+            <h2  className="titleProyects">PROYECTS</h2>
+            <div id="Proyects" className="containerProyect absolute"> 
                 {data.map(item=> (
-                <div className="bg-slate-50 text-slate-950 cardContainer max-w-xs rounded-2xl overflow-hidden">
+                <div  className="bg-neutral-950 border text-stone-50 border-stone-50 cardContainer max-w-xs rounded-2xl overflow-hidden">
                     <img src={images(item.image)} alt="card"/>
                     <div className="px-6 py-6">
                         <h2 className="text-xl mb-2">{item.name}</h2>

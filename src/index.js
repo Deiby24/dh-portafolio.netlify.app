@@ -6,7 +6,7 @@ import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { AboutMe } from "./components/AboutMe";
 import { Proyects } from "./components/Proyects";
-import { Empresas } from "./components/Companies";
+import { Empresas } from "./components/Collaborations";
 import { Expertise } from "./components/expertise";
 
 
