@@ -1,5 +1,5 @@
 import React,{ useEffect } from "react";
-
+import { Link as ScrollLink } from 'react-scroll';
 
 export function Navbar(){
 
@@ -18,11 +18,12 @@ export function Navbar(){
         <div className="containerNavbar">
             <div className="containerNav">
                     <ul  className="NavbarMenu">
-                        <il ><a href="/">Home</a></il>
-                        <il ><a href="/">About-me</a></il>
-                        <il ><a href="/">Proyects</a></il>
-                        <il ><a href="/">Collaborations</a></il>
-                        <il ><a href="/">Contact</a></il>
+                        <il ><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} >Home</ScrollLink></il>
+                        <il ><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></il>
+                        <il ><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></il>
+                        <il ><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></il>
+                        <il ><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></il>
+                        <il ><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></il>
                     </ul>
             </div>
                 <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>

@@ -3,9 +3,9 @@ import React from "react";
 const images = require.context('../../src/img', true)
 export function Footer() {
     return(
-        <div className="w-full absolute" style={{height:"200px",marginTop:"5%", zIndex:'1'}}>
+        <div className="w-full" style={{height:"200px", zIndex:'1'}}>
             <div className="containerFooter">
-                <div className="subContainerFooter">
+                <div id="Contact" className="subContainerFooter">
                     <div className="contact">
                         <a href="https://github.com/Deiby24" target="blanck"><img src={images('./github-white.svg')} /></a>
                         <a href="mailto:bhdeiby@gmail.com" target="blanck"><img src={images('./gmail.svg')}/></a>
