@@ -4,17 +4,17 @@ import collaborations from "./Data/CollaborationsData";
 const images = require.context('../../src/img', true)
 export function Empresas({items}) {
     return(
-        <div className="w-full" style={{height:`${collaborations.length * 200}px`}}>
+        <div id="Collaborationspth" className="w-full" style={{height:`${collaborations.length * 200}px`}}>
             <div id="Collaborationsbj" className="containerCompanies">
                 <div className="titleCompanies">
                     <h1>COLLABORATIONS</h1>
                 </div>
                 <div className="containerCardCompanies">
                     {collaborations.map(items=>(
-                        <div>
+                        <div >
                             <div class="max-w-sm rounded overflow-hidden ">
                                 <div style={{height:"200px"}}>
-                                    <img className="w-full h-full object-contain" src={images(items.image)} alt="Sunset in the mountains"/>
+                                    <img id="imgCollaborations" className="w-full h-full object-contain" src={images(items.image)} alt="Sunset in the mountains"/>
                                 </div>
                                 <div className="px-6 py-4">
                                     <div className="font-bold text-xl mb-2">{items.name}</div>

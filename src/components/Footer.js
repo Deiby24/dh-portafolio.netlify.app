@@ -3,7 +3,7 @@ import React from "react";
 const images = require.context('../../src/img', true)
 export function Footer() {
     return(
-        <div className="w-full" style={{height:"200px", zIndex:'1'}}>
+        <div id="footerpht" className="w-full" style={{height:"200px", zIndex:'1'}}>
             <div className="containerFooter">
                 <div id="Contact" className="subContainerFooter">
                     <div className="contact">

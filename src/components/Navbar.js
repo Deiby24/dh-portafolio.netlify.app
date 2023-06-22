@@ -16,14 +16,17 @@ export function Navbar(){
     
     return (
         <div className="containerNavbar">
+            <input type="checkbox" id="active"/>
+                <label for="active" class="menu-btn"><span></span></label>
+                <label for="active" class="close"><span></span></label>
             <div className="containerNav">
                     <ul  className="NavbarMenu">
-                        <il ><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} >Home</ScrollLink></il>
-                        <il ><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></il>
-                        <il ><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></il>
-                        <il ><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></il>
-                        <il ><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></il>
-                        <il ><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></il>
+                        <li><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} >Home</ScrollLink></li>
+                        <li><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></li>
+                        <li><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></li>
+                        <li><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></li>
+                        <li><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></li>
+                        <li><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></li>
                     </ul>
             </div>
                 <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>
