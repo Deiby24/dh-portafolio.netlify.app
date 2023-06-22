@@ -21,12 +21,12 @@ export function Navbar(){
                 <label for="active" class="close"><span></span></label>
             <div className="containerNav">
                     <ul  className="NavbarMenu">
-                        <li><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} >Home</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} >Home</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></li>
                     </ul>
             </div>
                 <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>

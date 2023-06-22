@@ -24,31 +24,32 @@ html {
     border-bottom: solid 1px white;
     text-align: center;
     z-index: 3;
-    & ul{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        & li {
-            margin-left: 1%;
-            & a {
-                text-decoration: solid;
-                font-size: 100%;
-                color:white;
-                pointer-events: auto;
-                text-transform: uppercase;
-                font-family: 'Oswald', sans-serif ;
-                cursor: pointer;
-                &:hover {
-                    text-shadow: #ff6262 1px 0px 10px;
-                }
-            }
-        }
-    
-    }
-    
 }
 
+.custom-link{
+    text-decoration: solid;
+    font-size: 100%;
+    color:white;
+    pointer-events: auto;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif ;
+    cursor: pointer;
+}
+
+.custom-link:hover{
+    text-shadow: #ff6262 1px 0px 10px;
+}
+
+.linav{
+    margin-left: 1%;
+}
+
+.NavbarMenu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #BackGroundNav{
     width: 100%;
@@ -85,9 +86,13 @@ html {
     place-items: center;
     text-align-last: center;
     font-family: 'Oswald', sans-serif ;
-    @media screen and (max-width: 900px) {
-        grid:none;    
-    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .subContainerAbout{
+        grid:none;
+    }  
 }
 
 .BackgrounAbout{
@@ -226,10 +231,7 @@ input[type="checkbox"]{
 
 /* Responsive */
 
-@media screen and (max-width: 740px) {
-
-
-
+@media screen and (max-width: 1000px) {
     .w-full{
         height: 800px!important;
     }
@@ -419,21 +421,19 @@ input[type="checkbox"]{
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        & button{
-            width: 55%;
-            & img{
-                height: 40%!important;
-                object-fit: contain;
-            }
-        }
     }
 
     .carouselCard  {
+        width: 55%;
         flex: 0 0 auto;
-        width: 0px; /* Ajusta el ancho de cada tarjeta según tus necesidades */
         scroll-snap-align: start;
         margin-right: 15px; /* Espacio entre cada tarjeta */
     }
+
+    .imgCardExpertise{
+        height: 40%!important;
+        object-fit: contain!important;
+    }   
 
     .carouselDots {
         display: flex;
