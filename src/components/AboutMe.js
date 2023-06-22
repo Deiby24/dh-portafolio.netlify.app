@@ -7,8 +7,8 @@ export function AboutMe() {
     
     useEffect(() => {
         const typed = new Typed(AnimationAbout.current,{
-            strings: ['> Tengo 18 años , vivo en Antioquia/Medellín , Tengo muchos conocimiento en muchos lenguajes de programación pero me gustaría aprender mas ya que tengo un gran interés por aprender cosas nuevas y llenarme de conocimientos , soy una persona de retos lo cual si me plantean algo difícil me intereso por eso hasta terminarlo. Mis características , habilidades y cualidades son que si no se algo trato de prenderlo por mi mismo , el trabajo en equipo es lo que mas me gusta , ayudar a los demás o compartirles mi conocimiento ,el respeto ante todo, soy consciente los tiempos tanto el mio como el de los demás , por lo tanto me considero una persona motivada a hacer las cosas, que cada dia se levanta pensando en el presente tanto como el futuro y que quiere aprender mas.'],
-            typeSpeed: 40,
+            strings: ['> Tengo 18 años, vivo en Antioquia/Medellín, estudie una técnica en desarrollo de software y debido a esto tengo un gran conocimiento en varios lenguajes de programación no obstante me gustaría adquirir mucho mas conocimiento del ya que tengo, puesto que me gusta aprender cosas nuevas, por otro lado me encantan los retos por que así demuestro mis habilidades y conocimientos. <br/>  Mis cualidades son : soy una persona autodidacta, creativa, eficiente, puntual, responsable, honesta, uno de mis fuertes es el trabajo en equipo ya que me gusta ayudar a los demás e incluso compartir mi conocimiento. Para mi el respeto es esencial por ello soy consciente de los tiempos de los demás y el mío, además me motiva demasiado realizar mis deberes de la mejor manera y que sean de excelente calidad.'],
+            typeSpeed: 0,
         })
 
         return()=> {
