@@ -21,15 +21,32 @@ export function Navbar(){
                 <label for="active" class="close"><span></span></label>
             <div className="containerNav">
                     <ul  className="NavbarMenu">
-                        <li><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} >Home</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="About" smooth={true} offset={-100}>About-me</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100}>Proyects</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100}>Collaborations</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100}>Skills</ScrollLink></li>
-                        <li><ScrollLink className="custom-link" to="Contact" smooth={true} >Contact</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} duration={50} >Home</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="About" smooth={true} offset={-100} duration={50}>About-me</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Proyects" smooth={true} offset={-100} duration={50}>Proyects</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Collaborationsbj" smooth={true} offset={-100} duration={50}>Collaborations</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Skills" smooth={true} offset={-100} duration={50}>Skills</ScrollLink></li>
+                        <li className="linav"><ScrollLink className="custom-link" to="Contact" smooth={true} duration={50}>Contact</ScrollLink></li>
                     </ul>
             </div>
-                <img id="BackGroundNav" src={require('../img/NavbarFondo.jpg')} alt='Foto 1'/>
+            <div className="containerInfo" style={{height:'800px'}}>
+                <div className="subContainerInfo">
+                    <div className="containerImgAbout">
+                        <img alt="aboutimg" className="imgAboutMe" src={require('../img/Deiby.png')}></img>
+                    </div>
+                    <div className="containerTextNavb">
+                        <div className="textName">
+                            <h1>Deiby Hernandez Perez</h1>
+                        </div>
+                        <div className="textCharge">
+                            <h2>Software Developer</h2>
+                        </div>
+                        <div className="buttonLearnMore">
+                            <ScrollLink to="About" offset={-100} duration={50}>Learn more</ScrollLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
  
     );

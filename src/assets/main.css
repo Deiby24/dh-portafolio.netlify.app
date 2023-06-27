@@ -2,6 +2,7 @@
 
 *{
     margin: 0%;
+    font-family: 'Oswald', sans-serif ;
 }
 
 body{
@@ -24,31 +25,32 @@ html {
     border-bottom: solid 1px white;
     text-align: center;
     z-index: 3;
-    & ul{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        & li {
-            margin-left: 1%;
-            & a {
-                text-decoration: solid;
-                font-size: 100%;
-                color:white;
-                pointer-events: auto;
-                text-transform: uppercase;
-                font-family: 'Oswald', sans-serif ;
-                cursor: pointer;
-                &:hover {
-                    text-shadow: #ff6262 1px 0px 10px;
-                }
-            }
-        }
-    
-    }
-    
 }
 
+.custom-link{
+    text-decoration: solid;
+    font-size: 100%;
+    color:white;
+    pointer-events: auto;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif ;
+    cursor: pointer;
+}
+
+.custom-link:hover{
+    text-shadow: #ff6262 1px 0px 10px;
+}
+
+.linav{
+    margin-left: 1%;
+}
+
+.NavbarMenu{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #BackGroundNav{
     width: 100%;
@@ -57,8 +59,62 @@ html {
     background-attachment: fixed;
 }
 
+.containerInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.subContainerInfo{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    background-color: #0000003e;
+    z-index: 1;
+}
 
+.containerImgAbout{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    z-index: 1;
+}
+
+.imgAboutMe{
+    object-fit: contain;
+    z-index: 1;
+    height: 100%;
+}
+
+.containerTextNavb{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 1.8rem;
+    z-index: 1;
+}
+
+.textName{
+    position: relative;
+    right: 62px;
+}
+
+.buttonLearnMore{
+    position: absolute;
+    bottom: 4%;
+    right: 6%;
+    cursor: pointer;
+    background-color: #164493;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0px 8px;
+}
 
 /* Section About Me */
 
@@ -74,20 +130,21 @@ html {
 .titleAbout{
     text-align: center;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif ;
     text-shadow: 5px 5px 5px #dddddd;
 }
 
 .subContainerAbout{
     height: 90%;
     display: grid;
-    grid-template-columns: 50% 50%;
     place-items: center;
     text-align-last: center;
-    font-family: 'Oswald', sans-serif ;
-    @media screen and (max-width: 900px) {
-        grid:none;    
-    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .subContainerAbout{
+        grid:none;
+    }  
 }
 
 .BackgrounAbout{
@@ -96,36 +153,27 @@ html {
 }
 
 .AboutMe{
-    background-image: url(../img/backgroundText.png);
+    background-image: url(../img/fondoVs.jpg);
     width: 80%;
     height: 80%;
     padding: 5%;
     border-radius: 0.625rem;
     background-size: cover;
+    position: relative;
+    background-position: center;
 }
 
 .textAbout{
     color: grey;
-    font-weight: 100;
-    font-weight: 1.5;
+    font-size: 1rem;
 }
 
-#aboutName{
+/* #aboutName{
     color: grey;
     font-weight: 100;
     font-weight: 1.5;
     padding-bottom: 1%;
-}
-
-.imgAboutMe{
-    width: 40%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* section proyects */
+} */
 
 .containerProyect{
     width: 100%;
@@ -141,7 +189,6 @@ html {
     color: white;
     font-size: 2rem;
     text-shadow: 5px 5px 5px #0a0a0a;
-    font-family: 'Oswald', sans-serif ;
 }
 
 /* section Empresa */
@@ -163,7 +210,6 @@ html {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif ;
 }
 
 /*Expertise*/
@@ -226,10 +272,7 @@ input[type="checkbox"]{
 
 /* Responsive */
 
-@media screen and (max-width: 740px) {
-
-
-
+@media screen and (max-width: 1000px) {
     .w-full{
         height: 800px!important;
     }
@@ -247,9 +290,30 @@ input[type="checkbox"]{
         height: 70%;
         width: 50%;
         background: #000;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.6s ;
         border-left:  solid white 2px;
         border-bottom:  solid white 2px;
+    }
+
+    .subContainerInfo{
+        width: 90%;
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .textName{
+        right: 0;
+    }
+    
+    .buttonLearnMore{
+        position: static;
+        margin: 5%;
+    }
+
+    .containerTextNavb{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     #active:checked ~ .containerNav{
@@ -279,7 +343,7 @@ input[type="checkbox"]{
         left: 30%;
         width: 40%;
         border-bottom: 2px solid #ffffff;
-        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
     .menu-btn:before{
         transform: translateY(-8px);
@@ -287,14 +351,6 @@ input[type="checkbox"]{
     .menu-btn:after{
         transform: translateY(8px);
     }
-
-    /* .close {
-        z-index: 3;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-        transition: all .6s ease;
-    } */
     
     #active:checked + .menu-btn span {
         transform: scaleX(0);
@@ -336,21 +392,8 @@ input[type="checkbox"]{
         line-height: 50px;
         margin: 5px 3px;
         transition: all 0.3s ease;
-        transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-    /* .containerNav ul li a:after{
-        position: absolute;
-        content: "";
-        background: #fff;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 50px;
-        transform: scaleY(0);
-        z-index: -1;
-        transition: transform 0.3s ease;
-      } */
     
       .containerNav ul li a:hover:after{
         transform: scaleY(1);
@@ -366,12 +409,14 @@ input[type="checkbox"]{
     }
 
     .AboutMe{
-        height: 350px;
+        height: 60%;
+        width: 90%;
+        padding: 8%;
         overflow: auto;
     }
 
     .textAbout{
-        font-size: 0.87rem;
+        font-size: 0.97rem;
         text-align: center;
     }  
 
@@ -419,21 +464,19 @@ input[type="checkbox"]{
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        & button{
-            width: 55%;
-            & img{
-                height: 40%!important;
-                object-fit: contain;
-            }
-        }
     }
 
     .carouselCard  {
+        width: 55%;
         flex: 0 0 auto;
-        width: 0px; /* Ajusta el ancho de cada tarjeta según tus necesidades */
         scroll-snap-align: start;
         margin-right: 15px; /* Espacio entre cada tarjeta */
     }
+
+    .imgCardExpertise{
+        height: 40%!important;
+        object-fit: contain!important;
+    }   
 
     .carouselDots {
         display: flex;
@@ -466,5 +509,15 @@ input[type="checkbox"]{
 
     #footerpht{
         height: 200px!important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #Collaborationspth{
+        height: 1400px!important;
+    }
+
+    #skillspth{
+        height: 900px!important;
     }
 }
