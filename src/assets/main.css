@@ -308,6 +308,7 @@ input[type="checkbox"]{
     .buttonLearnMore{
         position: static;
         margin: 5%;
+        padding: 5px 8px;
     }
 
     .containerTextNavb{
@@ -519,5 +520,57 @@ input[type="checkbox"]{
 
     #skillspth{
         height: 900px!important;
+    }
+}
+
+@media screen and  (max-width: 380px ) {
+    #Collaborationspth{
+        height: 1400px!important;
+    }
+
+    #skillspth{
+        height: 900px!important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #Collaborationspth{
+        height: 1500px!important;
+    }
+
+    #skillspth{
+        height: 1000px!important;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #Collaborationspth{
+        height: 1600px!important;
+    }
+
+    #skillspth{
+        height: 1000px!important;
+    }
+
+
+}
+
+@media screen and (max-width: 298px) {
+    .containerTextNavb{
+        font-size: 1.6rem;
+    }
+
+    .subContainerInfo{
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 245px) {
+    #Collaborationspth{
+        height: 1700px!important;
+    }
+
+    #skillspth{
+        height: 1000px!important;
     }
 }
