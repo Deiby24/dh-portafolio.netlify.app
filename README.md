@@ -1,12 +1,12 @@
-# Getting Started with Create React App
+# Deiby Hernandez Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este Proyecto fue hecho en github - ([docs.github.com](https://docs.github.com/es)).
 
-## Available Scripts
+## to implement the project
 
-In the project directory, you can run:
+### `you must install npm`
 
-### `npm start`
+In the terminal you must execute the command `npm install` which will install all the npm dependencies with which you will be able to run the program. 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Made by Deiby
+
+Github https://github.com/Deiby24 \
+Linkedin https://www.linkedin.com/in/deiby-hernandez-a73280275/ \
+Pagina web https://dh-portafolio.netlify.app/
+
