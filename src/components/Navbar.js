@@ -17,8 +17,8 @@ export function Navbar(){
     return (
         <div className="containerNavbar">
             <input type="checkbox" id="active"/>
-                <label for="active" class="menu-btn"><span></span></label>
-                <label for="active" class="close"><span></span></label>
+                <label htmlFor="active" className="menu-btn"><span></span></label>
+                <label htmlFor="active" className="close"><span></span></label>
             <div className="containerNav">
                     <ul  className="NavbarMenu">
                         <li className="linav"><ScrollLink className="custom-link" to="BackGroundNav" smooth={true} offset={-100} duration={50} >Home</ScrollLink></li>

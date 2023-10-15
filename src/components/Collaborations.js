@@ -11,8 +11,8 @@ export function Empresas({items}) {
                 </div>
                 <div className="containerCardCompanies">
                     {collaborations.map(items=>(
-                        <div >
-                            <div class="max-w-sm rounded overflow-hidden ">
+                        <div key={items.id} >
+                            <div className="max-w-sm rounded overflow-hidden ">
                                 <div style={{height:"200px"}}>
                                     <img id="imgCollaborations" className="w-full h-full object-contain" src={images(items.image)} alt="Sunset in the mountains"/>
                                 </div>

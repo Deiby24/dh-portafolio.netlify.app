@@ -7,9 +7,9 @@ export function Footer() {
             <div className="containerFooter">
                 <div id="Contact" className="subContainerFooter">
                     <div className="contact">
-                        <a href="https://github.com/Deiby24" target="blanck"><img src={images('./github-white.svg')} /></a>
-                        <a href="mailto:bhdeiby@gmail.com" target="blanck"><img src={images('./gmail.svg')}/></a>
-                        <a href="https://www.linkedin.com/in/deiby-hernandez-a73280275/" target="blanck"><img src={images('./linkedin.svg')}/></a>
+                        <a href="https://github.com/Deiby24" target="blanck"><img alt="" src={images('./github-white.svg')} /></a>
+                        <a href="mailto:bhdeiby@gmail.com" target="blanck"><img alt="" src={images('./gmail.svg')}/></a>
+                        <a href="https://www.linkedin.com/in/deiby-hernandez-a73280275/" target="blanck"><img alt="" src={images('./linkedin.svg')}/></a>
                         {/* <a href="https://github.com/Deiby24" target="blanck"><img src={images('./gmail.svg')}/></a> */}
                     </div>
                     <div className="copyright">

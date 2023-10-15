@@ -121,7 +121,7 @@ html {
 
 .containerAbout{
     height: 500px;
-    position: absolute;
+    position: relative;
     z-index: 1;
     width: 100%;
     background-color: white;
@@ -153,7 +153,7 @@ html {
 }
 
 .AboutMe{
-    background-image: url(../img/fondoVs.jpg);
+    background-color: #0a0a0a;
     width: 80%;
     height: 80%;
     padding: 5%;
@@ -175,14 +175,27 @@ html {
     padding-bottom: 1%;
 } */
 
+.single-card{
+    grid-template-columns: 1fr;
+}
+
+.double-cards{
+    grid-template-columns: 1fr 1fr;
+}
+
+.multiple-cards{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .containerProyect{
     width: 100%;
     height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
     z-index: 1;
 }
+
+
 
 .titleProyects{
     text-align: center;
@@ -196,12 +209,13 @@ html {
 .containerCompanies{
     width: 100%;
     background-color: white;
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
 .containerCardCompanies{
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 3%;
 }
@@ -229,7 +243,8 @@ html {
 
 .containerCardExpertise{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(34.33%, 1fr));
+    justify-items: center;
     padding: 5%;
 }
 
@@ -270,12 +285,10 @@ input[type="checkbox"]{
     display: none;
 }
 
-/* Responsive */
+/* Responsive ------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1000px) {
-    .w-full{
-        height: 800px!important;
-    }
+
 
     /* Navbar */
 
@@ -319,7 +332,7 @@ input[type="checkbox"]{
 
     #active:checked ~ .containerNav{
         right:0;
-      }
+    }
 
     .menu-btn{
         position: fixed;
@@ -358,11 +371,11 @@ input[type="checkbox"]{
     }
     #active:checked + .menu-btn:before {
         transform: rotate(45deg);
-      border-color: #fff;
+        border-color: #fff;
     }
     #active:checked + .menu-btn:after {
         transform: rotate(-45deg);
-      border-color: #fff;
+        border-color: #fff;
     }
 
     .NavbarMenu{
@@ -396,12 +409,12 @@ input[type="checkbox"]{
         transition: transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
     
-      .containerNav ul li a:hover:after{
+    .containerNav ul li a:hover:after{
         transform: scaleY(1);
-      }
-      input[type="checkbox"]{
+    }
+    input[type="checkbox"]{
         display: none;
-      }
+    }
 
     /* aboutme */
 
@@ -410,13 +423,14 @@ input[type="checkbox"]{
     }
 
     .AboutMe{
-        height: 60%;
+        height: auto;
         width: 90%;
         padding: 8%;
         overflow: auto;
     }
 
     .textAbout{
+        height: 50%;
         font-size: 0.97rem;
         text-align: center;
     }  
@@ -424,7 +438,7 @@ input[type="checkbox"]{
     /* proyects */
 
     #ProyectFt{
-        height: 1000px!important;
+        height: 1000px
     }
 
     .containerProyect{
@@ -475,16 +489,18 @@ input[type="checkbox"]{
     }
 
     .imgCardExpertise{
+        width: 35%!important;
         height: 40%!important;
         object-fit: contain!important;
     }   
+
 
     .carouselDots {
         display: flex;
         justify-content: center;
         margin-top: 10px;
     }
-      
+    
     .carouselDot {
         width: 10px;
         height: 10px;
@@ -492,7 +508,7 @@ input[type="checkbox"]{
         background-color: #ffffff;
         margin: 0 5px;
     }
-      
+    
     .carouselDot.active {
         background-color: #512222;
     }
@@ -518,9 +534,9 @@ input[type="checkbox"]{
         height: 1400px!important;
     }
 
-    #skillspth{
+    /* #skillspth{
         height: 900px!important;
-    }
+    } */
 }
 
 @media screen and  (max-width: 380px ) {
@@ -528,9 +544,9 @@ input[type="checkbox"]{
         height: 1400px!important;
     }
 
-    #skillspth{
+    /* #skillspth{
         height: 900px!important;
-    }
+    } */
 }
 
 @media screen and (max-width: 320px) {
@@ -538,9 +554,9 @@ input[type="checkbox"]{
         height: 1500px!important;
     }
 
-    #skillspth{
+    /* #skillspth{
         height: 1000px!important;
-    }
+    } */
 }
 
 @media screen and (max-width: 280px) {
@@ -548,9 +564,9 @@ input[type="checkbox"]{
         height: 1600px!important;
     }
 
-    #skillspth{
+    /* #skillspth{
         height: 1000px!important;
-    }
+    } */
 
 
 }
@@ -570,7 +586,7 @@ input[type="checkbox"]{
         height: 1700px!important;
     }
 
-    #skillspth{
+    /* #skillspth{
         height: 1000px!important;
-    }
+    } */
 }
