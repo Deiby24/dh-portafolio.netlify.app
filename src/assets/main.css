@@ -423,14 +423,13 @@ input[type="checkbox"]{
     }
 
     .AboutMe{
-        height: auto;
+        height: 60%;
         width: 90%;
         padding: 8%;
         overflow: auto;
     }
 
     .textAbout{
-        height: 50%;
         font-size: 0.97rem;
         text-align: center;
     }  
