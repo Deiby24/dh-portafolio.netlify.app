@@ -1,4 +1,4 @@
-import { CardContent, Grid, styled } from "@mui/material";
+import { Grid, styled } from "@mui/material";
 
 export const ContainerCardPy = styled(Grid)`    
     width: 100%;

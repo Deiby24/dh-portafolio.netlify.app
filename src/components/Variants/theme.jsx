@@ -1,8 +1,8 @@
 import { createTheme } from "@mui/material";
 
-const {breakpoints} = createTheme({
+// const {breakpoints} = createTheme({
     
-})
+// })
 
 export const theme = createTheme({
     components:{
