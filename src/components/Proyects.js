@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import data from './Data/data';
-import { Grid, Card, CardContent, Typography, Button, ThemeProvider, Box } from '@mui/material';
+import { Grid,  Typography, Button, ThemeProvider, Box } from '@mui/material';
 import { theme } from "./Variants/theme";
 import { ContainerCardPy  } from "./Variants/grid";
 import { CardContentPy, SubCardPy } from "./Variants/cards";
