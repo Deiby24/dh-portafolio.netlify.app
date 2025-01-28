@@ -37,7 +37,7 @@ export function Proyects() {
           // (data.length === 2 && window.innerWidth <= 1000 && {height:`${data.length * 500}px`, paddingTop:'50%'} )
           }}
         >
-          <Box >
+          <Box class="containerSubtitle">
             <Typography variant='subtitle' style={{position:'relative'}} >PROYECTS</Typography>
           </Box>
           <ContainerCardPy style={{position:'relative'}} className="containerProyect "> 
