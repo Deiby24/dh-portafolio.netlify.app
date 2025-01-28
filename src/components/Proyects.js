@@ -1,6 +1,6 @@
-import React, {useEffect} from "react";
+import React from "react";
 import data from './Data/data';
-import { Grid, Card, CardContent, Typography, Button, ThemeProvider, Box } from '@mui/material';
+import { Grid,  Typography, Button, ThemeProvider, Box } from '@mui/material';
 import { theme } from "./Variants/theme";
 import { ContainerCardPy  } from "./Variants/grid";
 import { CardContentPy, SubCardPy } from "./Variants/cards";
@@ -37,7 +37,7 @@ export function Proyects() {
           // (data.length === 2 && window.innerWidth <= 1000 && {height:`${data.length * 500}px`, paddingTop:'50%'} )
           }}
         >
-          <Box >
+          <Box class="containerSubtitle">
             <Typography variant='subtitle' style={{position:'relative'}} >PROYECTS</Typography>
           </Box>
           <ContainerCardPy style={{position:'relative'}} className="containerProyect "> 
