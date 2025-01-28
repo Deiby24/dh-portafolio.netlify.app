@@ -4,7 +4,7 @@ export  const data = [
         name: "RetroWind",
         description: "Hecha en Python",
         image: "./Retrowind.png",
-        link: "http://deiby24.pythonanywhere.com/",
+        link: "https://github.com/Deiby24/RetroWind",
         button: "Ir",
         enabled:true,
     }, 
